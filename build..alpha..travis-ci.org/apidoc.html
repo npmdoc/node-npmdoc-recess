@@ -1,0 +1,1757 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="http://twitter.github.com/recess"
+
+    >recess (v1.1.9)</a>
+</h1>
+<h4>A simple, attractive code quality tool for CSS built on top of LESS</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess">module recess</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.recess">
+            function <span class="apidocSignatureSpan"></span>recess
+            <span class="apidocSignatureSpan">(paths, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor">
+            function <span class="apidocSignatureSpan">recess.</span>Constructor
+            <span class="apidocSignatureSpan">(path, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.docs">
+            function <span class="apidocSignatureSpan">recess.</span>docs
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>Constructor.RULES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>Constructor.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>DEFAULTS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>inline_images</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>prefix_whitespace</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>strict_property_order</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>util</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.</span>zero_units</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.Constructor">module recess.Constructor</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.Constructor">
+            function <span class="apidocSignatureSpan">recess.</span>Constructor
+            <span class="apidocSignatureSpan">(path, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.Constructor.</span>COMPILERS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.Constructor.</span>DEFAULTS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">recess.Constructor.</span>RULES</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.Constructor.RULES">module recess.Constructor.RULES</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.inlineImages">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>inlineImages
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.noIDs">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noIDs
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.noJSPrefix">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noJSPrefix
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.noOverqualifying">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noOverqualifying
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.noUnderscores">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noUnderscores
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.noUniversalSelectors">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noUniversalSelectors
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.strictPropertyOrder">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>strictPropertyOrder
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.RULES.zeroUnits">
+            function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>zeroUnits
+            <span class="apidocSignatureSpan">(def, data)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.Constructor.prototype">module recess.Constructor.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.compile">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>compile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.constructor">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(path, options, callback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.log">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>log
+            <span class="apidocSignatureSpan">(str, force)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.parse">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>parse
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.read">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>read
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.test">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>test
+            <span class="apidocSignatureSpan">(validation)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.validate">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>validate
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.Constructor.prototype.validateStatus">
+            function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>validateStatus
+            <span class="apidocSignatureSpan">(failed)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.inline_images">module recess.inline_images</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.inline_images.off">
+            function <span class="apidocSignatureSpan">recess.inline_images.</span>off
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.inline_images.on">
+            function <span class="apidocSignatureSpan">recess.inline_images.</span>on
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.prefix_whitespace">module recess.prefix_whitespace</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.prefix_whitespace.off">
+            function <span class="apidocSignatureSpan">recess.prefix_whitespace.</span>off
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.prefix_whitespace.on">
+            function <span class="apidocSignatureSpan">recess.prefix_whitespace.</span>on
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.strict_property_order">module recess.strict_property_order</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.strict_property_order.off">
+            function <span class="apidocSignatureSpan">recess.strict_property_order.</span>off
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.strict_property_order.on">
+            function <span class="apidocSignatureSpan">recess.strict_property_order.</span>on
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.util">module recess.util</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.util.countErrors">
+            function <span class="apidocSignatureSpan">recess.util.</span>countErrors
+            <span class="apidocSignatureSpan">(definitions)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.util.getLine">
+            function <span class="apidocSignatureSpan">recess.util.</span>getLine
+            <span class="apidocSignatureSpan">(index, data)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.util.padLine">
+            function <span class="apidocSignatureSpan">recess.util.</span>padLine
+            <span class="apidocSignatureSpan">(line)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.util.throwError">
+            function <span class="apidocSignatureSpan">recess.util.</span>throwError
+            <span class="apidocSignatureSpan">(def, err)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.recess.zero_units">module recess.zero_units</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.zero_units.off">
+            function <span class="apidocSignatureSpan">recess.zero_units.</span>off
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.recess.zero_units.on">
+            function <span class="apidocSignatureSpan">recess.zero_units.</span>on
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess" id="apidoc.module.recess">module recess</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.recess" id="apidoc.element.recess.recess">
+        function <span class="apidocSignatureSpan"></span>recess
+        <span class="apidocSignatureSpan">(paths, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">recess = function (paths, options, callback) {
+
+  var option, message, i, instances = []
+
+  // if no options default to empty object
+  options = options || {}
+
+  // if options is a function, set to callback and set options to {}
+  if (typeof options == &#x27;function&#x27;) (callback = options) &#x26;&#x26; (options = {})
+
+  // if single path, convert to array
+  if (typeof paths == &#x27;string&#x27;) paths = [paths]
+
+  // there were no paths, show the docs
+  if (!paths || !paths.length) return module.exports.docs()
+
+  // if a compress flag is present, we automatically make compile flag true
+  options.compress &#x26;&#x26; (options.compile = true)
+
+  // if format is set to compact, automatically set noSummary
+  options.format &#x26;&#x26; (options.format == &#x27;compact&#x27;) &#x26;&#x26; (options.noSummary = true)
+
+  // if not compiling, let user know which files will be linted
+  if (!options.compile &#x26;&#x26; options.cli &#x26;&#x26; !options.noSummary) {
+    message = &#x22;\nAnalyzing the following files: &#x22; + ((paths + &#x27;&#x27;).replace(/,/g, &#x27;, &#x27;) + &#x27;\n&#x27;).grey
+    options.stripColors &#x26;&#x26; (message = message.stripColors)
+    console.log(message)
+  }
+
+  // for each path, create a new RECESS instance
+  function recess(init, path, err) {
+    if (path = paths.shift()) {
+      return instances.push(new RECESS(path, options, recess))
+    }
+
+    // map/filter for errors
+    err = instances
+      .map(function (i) {
+        return i.errors.length &#x26;&#x26; i.errors
+      })
+      .filter(function (i) {
+        return i
+      })
+
+    // if no error, set explicitly to null
+    err = err.length ? err[0] : null
+
+    //callback
+    callback &#x26;&#x26; callback(err, instances)
+  }
+
+  // start processing paths
+  recess(true)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor" id="apidoc.element.recess.Constructor">
+        function <span class="apidocSignatureSpan">recess.</span>Constructor
+        <span class="apidocSignatureSpan">(path, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RECESS(path, options, callback) {
+  this.path = path
+  this.output = []
+  this.errors = []
+  this.options = _.extend({}, RECESS.DEFAULTS, options)
+  path &#x26;&#x26; this.read()
+  this.callback = callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.docs" id="apidoc.element.recess.docs">
+        function <span class="apidocSignatureSpan">recess.</span>docs
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">docs = function () {
+  console.log(&#x22;\nGENERAL USE: &#x22; + &#x22;$&#x22;.grey + &#x22; recess&#x22;.cyan + &#x22; [path] &#x22;.yellow + &#x22;[options]\n&#x22;.grey)
+  console.log(&#x22;OPTIONS:&#x22;)
+  for (var option in RECESS.DEFAULTS) console.log(&#x27;  --&#x27; + option)
+  console.log(&#x22;\nEXAMPLE:\n\n&#x22; + &#x22;  $&#x22;.grey + &#x22; recess&#x22;.cyan + &#x22; ./bootstrap.css &#x22;.yellow + &#x22;--noIDs false\n&#x22;.grey)
+  console.log(&#x27;GENERAL HELP: &#x27; + &#x27;http://git.io/recess\n&#x27;.yellow)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.Constructor" id="apidoc.module.recess.Constructor">module recess.Constructor</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.Constructor" id="apidoc.element.recess.Constructor.Constructor">
+        function <span class="apidocSignatureSpan">recess.</span>Constructor
+        <span class="apidocSignatureSpan">(path, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RECESS(path, options, callback) {
+  this.path = path
+  this.output = []
+  this.errors = []
+  this.options = _.extend({}, RECESS.DEFAULTS, options)
+  path &#x26;&#x26; this.read()
+  this.callback = callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.Constructor.RULES" id="apidoc.module.recess.Constructor.RULES">module recess.Constructor.RULES</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.inlineImages" id="apidoc.element.recess.Constructor.RULES.inlineImages">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>inlineImages
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">inlineImages = function (def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no selector to validate
+  if (!def.rules) return isValid
+
+  // loop over selectors
+  def.rules.forEach(function (rule) {
+    var extract
+      , line
+
+    // continue to next rule if no url is present
+    if ( !(rule.value
+        &#x26;&#x26; rule.value.is == &#x27;value&#x27;
+        &#x26;&#x26; RULE.exp.test(rule.value.toCSS({}))) ) return
+
+    // calculate line number for the extract
+    line = util.getLine(rule.index, data)
+    extract = util.padLine(line)
+
+    // highlight invalid 0 units
+    extract += rule.toCSS({}).replace(RULE.exp, function ($1) {
+      return $1.magenta
+    })
+
+    // set invalid flag to false
+    isValid = false
+
+    // set error object on defintion token
+    util.throwError(def, {
+      type: RULE.type
+    , message: RULE.message
+    , extract: extract
+    , line: line
+    })
+
+  })
+
+  // return validation state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.noIDs" id="apidoc.element.recess.Constructor.RULES.noIDs">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noIDs
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noIDs = function (def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no selectors to validate
+  if (!def.selectors) return isValid
+
+  // loop over selectors
+  def.selectors.forEach(function (selector) {
+
+    // loop over selector entities
+    selector.elements.forEach(function (element) {
+
+      var extract
+        , line
+
+      // continue to next element if no js- prefix
+      if (!RULE.exp.test(element.value)) return
+
+      // calculate line number for the extract
+      line = util.getLine(element.index - element.value.length, data)
+      extract = util.padLine(line)
+
+      // highlight invalid styling of ID
+      extract += element.value.replace(RULE.exp, &#x27;#&#x27;.magenta)
+
+      // set invalid flag to false
+      isValid = false
+
+      // set error object on defintion token
+      util.throwError(def, {
+        type: RULE.type
+      , message: RULE.message
+      , extract: extract
+      , line: line
+      })
+
+    })
+  })
+
+  // return valid state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.noJSPrefix" id="apidoc.element.recess.Constructor.RULES.noJSPrefix">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noJSPrefix
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noJSPrefix = function (def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no selector to validate
+  if (!def.selectors) return isValid
+
+  // loop over selectors
+  def.selectors.forEach(function (selector) {
+
+    // loop over selector entities
+    selector.elements.forEach(function (element) {
+
+      var extract
+        , line
+
+      // continue to next element if .js- prefix not styled
+      if (!RULE.exp.test(element.value)) return
+
+      // calculate line number for the extract
+      line = util.getLine(element.index - element.value.length, data)
+      extract = util.padLine(line)
+
+      // highlight invalid styling of .js- prefix
+      extract += element.value.replace(RULE.exp, &#x27;.js-&#x27;.magenta)
+
+      // set invalid flag to false
+      isValid = false
+
+      // set error object on defintion token
+      util.throwError(def, {
+        type: RULE.type
+      , message: RULE.message
+      , extract: extract
+      , line: line
+      })
+
+    })
+
+  })
+
+  // return valid state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.noOverqualifying" id="apidoc.element.recess.Constructor.RULES.noOverqualifying">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noOverqualifying
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noOverqualifying = function (def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no selector to validate
+  if (!def.selectors) return isValid
+
+  // loop over selectors
+  def.selectors.forEach(function (selector) {
+
+    // evaluate selector to string and trim whitespace
+    var selectorString = selector.toCSS().trim()
+      , extract
+      , line
+
+    // if selector isn&#x27;t overqualified continue
+    if (!RULE.exp.test(selectorString)) return
+
+    // calculate line number for the extract
+    line = util.getLine(selector.elements[0].index - selector.elements[0].value.length, data)
+    extract = util.padLine(line)
+
+    // highlight selector overqualification
+    extract += selectorString.replace(RULE.exp, function ($1) { return $1.magenta })
+
+    // set invalid flag to false
+    isValid = false
+
+    // set error object on defintion token
+    util.throwError(def, {
+      type: RULE.type
+    , message: RULE.message
+    , extract: extract
+    , line: line
+    })
+
+  })
+
+  // return validation state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.noUnderscores" id="apidoc.element.recess.Constructor.RULES.noUnderscores">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noUnderscores
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function validate(def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no selector to validate
+  if (!def.selectors) return isValid
+
+  // loop over selectors
+  def.selectors.forEach(function (selector) {
+
+    // loop over selector entities
+    selector.elements.forEach(function (element) {
+
+      var extract
+        , line
+
+      // continue to next element if no underscore
+      if (!RULE.exp.test(element.value)) return
+
+      // calculate line number for the extract
+      line = util.getLine(element.index - element.value.length, data)
+      extract = util.padLine(line)
+
+      // highlight invalid underscores
+      extract += element.value.replace(RULE.exp, &#x27;_&#x27;.magenta)
+
+      // set invalid flag to false
+      isValid = false
+
+      // set error object on defintion token
+      util.throwError(def, {
+        type: RULE.type
+      , message: RULE.message
+      , extract: extract
+      , line: line
+      })
+
+    })
+  })
+
+  // return valid state
+  return isValid
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.noUniversalSelectors" id="apidoc.element.recess.Constructor.RULES.noUniversalSelectors">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>noUniversalSelectors
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">noUniversalSelectors = function (def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no rules to validate
+  if (!def.selectors) return isValid
+
+  // loop over selectors
+  def.selectors.forEach(function (selector) {
+
+    // loop over selector entities
+    selector.elements.forEach(function (element) {
+
+      var extract
+        , line
+
+      // continue to next element if no underscore
+      if (!RULE.exp.test(element.value)) return
+
+      // calculate line number for the extract
+      line = util.getLine(element.index - element.value.length, data)
+      extract = util.padLine(line)
+
+      // highlight the invalid use of a universal selector
+      extract += selector.toCSS({}).replace(RULE.exp, &#x27;*&#x27;.magenta)
+
+      // set invalid flag to false
+      isValid = false
+
+      // set error object on defintion token
+      util.throwError(def, {
+        type: RULE.type
+      , message: RULE.message
+      , extract: extract
+      , line: line
+      })
+
+    })
+  })
+
+  // return valid state
+  return isValid
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.strictPropertyOrder" id="apidoc.element.recess.Constructor.RULES.strictPropertyOrder">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>strictPropertyOrder
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">strictPropertyOrder = function (def, data) {
+
+  // // default validation to true
+  var isValid = true
+    , dict = {}
+    , index = 0
+    , cleanRules
+    , sortedRules
+    , firstLine
+    , extract
+    , selector
+
+  // return if no rules to validate
+  if (!def.rules) return isValid
+
+  // recurse over nested rulesets
+  def.rules.forEach(function (rule) {
+    if (rule.selectors) module.exports(rule, data)
+  })
+
+  cleanRules = def.rules.map(function (rule) {
+    return rule.name &#x26;&#x26; rule
+  }).filter(function (item) { return item })
+
+  // sort rules
+  sortedRules = _.sortBy(cleanRules, function (rule) {
+
+    // pad value of each rule position to account for vendor prefixes
+    var padding = (vendorPrefixes.length + 1) * 10
+      , root
+      , val
+
+    // strip vendor prefix and hack prefix from rule name to find root
+    root = rule.name
+      .replace(VENDOR_PREFIX, &#x27;&#x27;)
+      .replace(HACK_PREFIX, &#x27;&#x27;)
+
+    // find value of order of the root css property
+    val = order.indexOf(root)
+
+    // if property is not found, exit with property not found error
+    if (!~val) {
+      return util.throwError(def, {
+        type: &#x27;propertyNotFound&#x27;
+      , message: &#x27;Unknown property name: &#x22;&#x27; + rule.name + &#x27;&#x22;&#x27;
+      })
+    }
+
+    // pad value
+    val  = (val * padding) + 10
+
+    // adjust value based on prefix
+    val += VENDOR_PREFIX.exec(rule.name) ? vendorPrefixes.indexOf(RegExp.$1) : (vendorPrefixes.length + 1)
+
+    // adjust value based on css hack
+    val += HACK_PREFIX.exec(rule.name) ? (hackPrefixes.indexOf(RegExp.$1)) : 0
+
+    // return sort value
+    return val
+  })
+
+  // check to see if sortedRules has same order as provided rules
+  isValid = _.isEqual(sortedRules, cleanRules)
+
+  // return if sort is correct
+  if (isValid) return isValid
+
+  // get the line number of the first rule
+  firstLine = util.getLine(def.rules[0].index, data)
+
+  // generate a extract what the correct sorted rules would look like
+  extract = sortedRules.map(function (rule) {
+    if (!rule.name) return
+    return util.padLine(firstLine + index++)
+      + &#x27; &#x27; + rule.name + &#x27;: &#x27;
+      + (typeof rule.value == &#x27;string&#x27; ? rule.value : rule.value.toCSS({}))
+      + &#x27;;&#x27;
+  }).filter(function (item) { return item }).join(&#x27;\n&#x27;)
+
+  // extract selector for error message
+  selector = (&#x27; &#x22;&#x27; + def.selectors.map(function (selector) {
+    return selector.toCSS &#x26;&#x26; selector.toCSS({}).replace(/^\s/, &#x27;&#x27;)
+  }).join(&#x27;, &#x27;) + &#x27;&#x22;&#x27;).magenta
+
+  // set error object on defintion token
+  util.throwError(def, {
+    type: RULE.type
+  , message: RULE.message + selector + &#x27;\n\n  Correct order below:\n&#x27;.grey
+  , extract: extract
+  , sortedRules: sortedRules
+  , line: firstLine
+  })
+
+  // return valid state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.RULES.zeroUnits" id="apidoc.element.recess.Constructor.RULES.zeroUnits">
+        function <span class="apidocSignatureSpan">recess.Constructor.RULES.</span>zeroUnits
+        <span class="apidocSignatureSpan">(def, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">zeroUnits = function (def, data) {
+
+  // default validation to true
+  var isValid = true
+
+  // return if no rules to validate
+  if (!def.rules) return isValid
+
+  // loop over rules
+  def.rules.forEach(function (rule) {
+    var extract
+      , line
+
+    // continue to next rule if no 0 units are present
+    if ( !(rule.value
+        &#x26;&#x26; rule.value.is == &#x27;value&#x27;
+        &#x26;&#x26; RULE.exp.test(rule.value.toCSS({}))) ) return
+
+    // calculate line number for the extract
+    line = util.getLine(rule.index, data)
+    extract = util.padLine(line)
+
+    // highlight invalid 0 units
+    extract += rule.toCSS({}).replace(RULE.exp, function ($1) {
+      return 0 + $1.slice(1).magenta
+    })
+
+    // set invalid flag to false
+    isValid = false
+
+    // set error object on defintion token
+    util.throwError(def, {
+      type: RULE.type
+    , message: RULE.message
+    , extract: extract
+    , line: line
+    })
+
+  })
+
+  // return valid state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.Constructor.prototype" id="apidoc.module.recess.Constructor.prototype">module recess.Constructor.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.compile" id="apidoc.element.recess.Constructor.prototype.compile">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>compile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">compile = function () {
+  var that = this
+    , key
+    , css
+
+  // activate all relevant compilers
+  Object.keys(this.options).forEach(function (key) {
+    that.options[key]
+      &#x26;&#x26; RECESS.COMPILERS[key]
+      &#x26;&#x26; RECESS.COMPILERS[key].on.call(that)
+  })
+
+  // iterate over defintions and compress them (join with new lines)
+  css = this.definitions.map(function (def) {
+    return def.toCSS([[]], { data: that.data, compress: that.options.compress })
+  }).join(this.options.compress ? &#x27;&#x27; : &#x27;\n&#x27;)
+
+  // minify with cssmin
+  if (that.options.compress) css = require(&#x27;./min&#x27;).compressor.cssmin(css)
+
+  // deactivate all relevant compilers
+  Object.keys(this.options).reverse().forEach(function (key) {
+    that.options[key]
+      &#x26;&#x26; RECESS.COMPILERS[key]
+      &#x26;&#x26; RECESS.COMPILERS[key].off()
+  })
+
+  // cleanup trailing newlines
+  css = css.replace(/[\n\s\r]*$/, &#x27;&#x27;)
+
+  // output css
+  this.log(css, true)
+
+  // callback and exit
+  this.callback &#x26;&#x26; this.callback()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.constructor" id="apidoc.element.recess.Constructor.prototype.constructor">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(path, options, callback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function RECESS(path, options, callback) {
+  this.path = path
+  this.output = []
+  this.errors = []
+  this.options = _.extend({}, RECESS.DEFAULTS, options)
+  path &#x26;&#x26; this.read()
+  this.callback = callback
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.log" id="apidoc.element.recess.Constructor.prototype.log">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>log
+        <span class="apidocSignatureSpan">(str, force)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">log = function (str, force) {
+
+  if (this.options.stripColors) str = str.stripColors
+
+  // if compiling only write with force flag
+  if (!this.options.compile || force) {
+    this.options.cli ? console.log(str) : this.output.push(str)
+  }
+
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+When compiling, access the compiled source through the output property:
+
+```js
+var recess = require(&#x27;recess&#x27;)
+
+recess(&#x27;./js/fat.css&#x27;, { compile: true }, function (err, obj) {
+  if (err) throw err
+  console.<span class="apidocCodeKeywordSpan">log</span>(
+  	obj // recess instance for fat.css
+  , obj.output // array of loggable content
+  , obj.errors // array of failed lint rules
+  )
+})
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.parse" id="apidoc.element.recess.Constructor.prototype.parse">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>parse
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">parse = function () {
+  var that = this
+    , options = {
+        paths: [path.dirname(this.path)].concat(this.options.includePath)
+      , optimization: 0
+      , filename: this.path &#x26;&#x26; this.path.replace(/.*(?=\/)\//, &#x27;&#x27;)
+      }
+
+  // try to parse with less parser
+  try {
+
+    // instantiate new parser with options
+    new less.Parser(options)
+
+      // parse data into tree
+      .parse(this.data, function (err, tree) {
+
+        if (err) {
+          // push to errors array
+          that.errors.push(err)
+
+          if (err.type == &#x27;Parse&#x27;) {
+            // parse error
+            that.log(&#x22;Parser error&#x22;.red + (err.filename ? &#x27; in &#x27; + err.filename : &#x27;&#x27;) + &#x27;\n&#x27;)
+          } else {
+            // other exception
+            that.log(String(err.name).red + &#x22;: &#x22; + err.message + &#x27; of &#x27; + String(err.filename).yellow + &#x27;\n&#x27;)
+          }
+
+          // if extract - then log it
+          err.extract &#x26;&#x26; err.extract.forEach(function (line, index) {
+            that.log(util.padLine(err.line + index) + line)
+          })
+
+          // add extra line for readability after error log
+          that.log(&#x22; &#x22;)
+
+          // exit with callback if present
+          return that.callback &#x26;&#x26; that.callback()
+        }
+
+        // test to see if file has a less extension
+        if (/less$/.test(that.path) &#x26;&#x26; !that.parsed) {
+
+          // if it&#x27;s a LESS file, we flatten it
+          that.data = tree.toCSS({})
+
+          // set parse to true so as to not infinitely reparse less files
+          that.parsed = true
+
+          // reparse less file
+          return that.parse()
+        }
+
+        // set definitions to parse tree
+        that.definitions = tree.rules
+
+        // validation defintions
+        that.options.compile ? that.compile() : that.validate()
+      })
+
+  } catch (err) {
+
+    // less exploded trying to parse the file (╯°□°）╯︵ ┻━┻
+    // push to errors array
+    that.errors.push(err)
+
+    // log a message trying to explain why
+    that.log(
+        &#x22;Parse error&#x22;.red
+      + &#x22;: &#x22;
+      + err.message
+      + &#x22; on line &#x22;
+      + util.getLine(err.index, this.data)
+    )
+
+    // exit with callback if present
+    this.callback &#x26;&#x26; this.callback()
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.read" id="apidoc.element.recess.Constructor.prototype.read">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>read
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">read = function () {
+  var that = this
+
+  // try to read data from path
+  fs.readFile(this.path, &#x27;utf8&#x27;, function (err, data) {
+
+    //  if err, exit with could not read message
+    if (err) {
+      that.errors.push(err)
+      that.log(&#x27;Error reading file: &#x27;.red + String(that.path).grey + &#x27;\n&#x27;, true)
+      return that.callback &#x26;&#x26; that.callback()
+    }
+
+    // set instance data
+    that.data = data
+
+    // parse data
+    that.parse()
+
+  })
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.test" id="apidoc.element.recess.Constructor.prototype.test">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>test
+        <span class="apidocSignatureSpan">(validation)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">test = function (validation) {
+  var l = this.definitions.length
+    , i = 0
+    , isValid = true
+    , rule
+    , def
+    , j
+    , k
+
+  // test each definition against a given validation
+  for (; i &#x3c; l; i++) {
+    def = this.definitions[i]
+    if (!validation(def, this.data)) isValid = false
+  }
+
+  // return valid state
+  return isValid
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+, path
+
+function compile () {
+// strip units from 0 values
+var props = toCSS.apply(this, arguments)
+
+// do we have a url here?
+if (/url\(/.<span class="apidocCodeKeywordSpan">test</span>(props)) {
+  var fileName = props.match(/url\(([&#x27;&#x22;]?)(.*)\1\)/)[2]
+    , ext = fileName.match(/[^.]*$/)[0]
+    , mimetype = &#x27;image/&#x27; + ext.replace(/jpg/, &#x27;jpeg&#x27;)
+    , pathParts = path.split(seperator)
+    , filePath = pathParts.slice(0, pathParts.length - 1).join(seperator)
+    , imgBuffer = new Buffer(fs.readFileSync((filePath?filePath:&#x27;.&#x27;)+seperator+fileName)).toString(&#x27;base64&#x27;)
+    , urlData = &#x27;url(data:&#x27; + mimetype + &#x27;;base64,&#x27; + imgBuffer + &#x27;)&#x27;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.validate" id="apidoc.element.recess.Constructor.prototype.validate">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>validate
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validate = function () {
+  var failed
+    , key
+
+  // iterate over instance options
+  for (key in this.options) {
+
+    // if option has a validation, then we test it
+    this.options[key]
+      &#x26;&#x26; RECESS.RULES[key]
+      &#x26;&#x26; !this.test(RECESS.RULES[key])
+      &#x26;&#x26; (failed = true)
+
+  }
+
+  // exit with failed flag to validateStatus
+  this.validateStatus(failed)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.Constructor.prototype.validateStatus" id="apidoc.element.recess.Constructor.prototype.validateStatus">
+        function <span class="apidocSignatureSpan">recess.Constructor.prototype.</span>validateStatus
+        <span class="apidocSignatureSpan">(failed)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">validateStatus = function (failed) {
+  var that = this
+    , fails
+    , formatter
+
+  if (failed) {
+
+    // count errors
+    fails = util.countErrors(this.definitions)
+
+    if (!this.options.noSummary) {
+      // log file overview
+      this.log(&#x27;FILE: &#x27; + this.path.cyan)
+      this.log(&#x27;STATUS: &#x27; + &#x27;Busted&#x27;.magenta)
+      this.log(&#x27;FAILURES: &#x27; + (fails + &#x27; failure&#x27; + (fails &#x3e; 1 ? &#x27;s&#x27; : &#x27;&#x27;)).magenta + &#x27;\n&#x27;)
+    }
+
+    if (this.options.format &#x26;&#x26; this.options.format == &#x27;compact&#x27;) {
+      formatter = function (err) {
+        that.log(that.path + &#x27;:&#x27; + err.line + &#x27;:&#x27; + err.message)
+      }
+    } else {
+      formatter = function (err) {
+        that.log(err.message)
+        err.extract &#x26;&#x26; that.log(err.extract + &#x27;\n&#x27;)
+      }
+    }
+
+    // iterate through each definition
+    this.definitions.forEach(function (def) {
+
+      // if there&#x27;s an error, log the error and optional err.extract
+      def.errors
+        &#x26;&#x26; def.errors.length
+        &#x26;&#x26; def.errors.forEach(formatter)
+    })
+
+  } else {
+    // it was a success - let the user know!
+    this.log(&#x27;FILE: &#x27; + this.path.cyan)
+    this.log(&#x27;STATUS: &#x27; + &#x27;Perfect!\n&#x27;.yellow)
+  }
+
+  // callback and exit
+  this.callback &#x26;&#x26; this.callback()
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.inline_images" id="apidoc.module.recess.inline_images">module recess.inline_images</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.inline_images.off" id="apidoc.element.recess.inline_images.off">
+        function <span class="apidocSignatureSpan">recess.inline_images.</span>off
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">off = function () {
+  less.tree.Value.prototype.toCSS = toCSS
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.inline_images.on" id="apidoc.element.recess.inline_images.on">
+        function <span class="apidocSignatureSpan">recess.inline_images.</span>on
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function () {
+  path = this.path
+  toCSS = less.tree.Value.prototype.toCSS
+  less.tree.Value.prototype.toCSS = compile
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.prefix_whitespace" id="apidoc.module.recess.prefix_whitespace">module recess.prefix_whitespace</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.prefix_whitespace.off" id="apidoc.element.recess.prefix_whitespace.off">
+        function <span class="apidocSignatureSpan">recess.prefix_whitespace.</span>off
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">off = function () {
+  less.tree.Ruleset.prototype.toCSS = toCSS
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.prefix_whitespace.on" id="apidoc.element.recess.prefix_whitespace.on">
+        function <span class="apidocSignatureSpan">recess.prefix_whitespace.</span>on
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function () {
+  toCSS = less.tree.Ruleset.prototype.toCSS
+  less.tree.Ruleset.prototype.toCSS = compile
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.strict_property_order" id="apidoc.module.recess.strict_property_order">module recess.strict_property_order</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.strict_property_order.off" id="apidoc.element.recess.strict_property_order.off">
+        function <span class="apidocSignatureSpan">recess.strict_property_order.</span>off
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">off = function () {
+  less.tree.Ruleset.prototype.toCSS = toCSS
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.strict_property_order.on" id="apidoc.element.recess.strict_property_order.on">
+        function <span class="apidocSignatureSpan">recess.strict_property_order.</span>on
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function () {
+  toCSS = less.tree.Ruleset.prototype.toCSS
+  less.tree.Ruleset.prototype.toCSS = compile
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.util" id="apidoc.module.recess.util">module recess.util</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.util.countErrors" id="apidoc.element.recess.util.countErrors">
+        function <span class="apidocSignatureSpan">recess.util.</span>countErrors
+        <span class="apidocSignatureSpan">(definitions)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">countErrors = function (definitions) {
+  var fails = 0
+  definitions.forEach(function (def) {
+    def.errors
+      &#x26;&#x26; def.errors.length
+      &#x26;&#x26; def.errors.forEach(function (err) { fails++ })
+  })
+  return fails
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.util.getLine" id="apidoc.element.recess.util.getLine">
+        function <span class="apidocSignatureSpan">recess.util.</span>getLine
+        <span class="apidocSignatureSpan">(index, data)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">getLine = function (index, data) {
+  return (data.slice(0, index).match(/\n/g) || &#x22;&#x22;).length + 1;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var extract
+  , line
+
+// continue to next element if no js- prefix
+if (!RULE.exp.test(element.value)) return
+
+// calculate line number for the extract
+line = util.<span class="apidocCodeKeywordSpan">getLine</span>(element.index - element.value.length, data)
+extract = util.padLine(line)
+
+// highlight invalid styling of ID
+extract += element.value.replace(RULE.exp, &#x27;#&#x27;.magenta)
+
+// set invalid flag to false
+isValid = false
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.util.padLine" id="apidoc.element.recess.util.padLine">
+        function <span class="apidocSignatureSpan">recess.util.</span>padLine
+        <span class="apidocSignatureSpan">(line)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">padLine = function (line) {
+  var num = (line + &#x27;. &#x27;)
+    , space = &#x27;&#x27;
+    _.times(10 - num.length, function () { space += &#x27; &#x27; })
+  return (space + num).grey
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  , line
+
+// continue to next element if no js- prefix
+if (!RULE.exp.test(element.value)) return
+
+// calculate line number for the extract
+line = util.getLine(element.index - element.value.length, data)
+extract = util.<span class="apidocCodeKeywordSpan">padLine</span>(line)
+
+// highlight invalid styling of ID
+extract += element.value.replace(RULE.exp, &#x27;#&#x27;.magenta)
+
+// set invalid flag to false
+isValid = false
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.util.throwError" id="apidoc.element.recess.util.throwError">
+        function <span class="apidocSignatureSpan">recess.util.</span>throwError
+        <span class="apidocSignatureSpan">(def, err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">throwError = function (def, err) {
+  def.errors = def.errors || []
+  err.message = err.message.cyan
+  def.errors.push(err)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  // highlight invalid styling of ID
+  extract += element.value.replace(RULE.exp, &#x27;#&#x27;.magenta)
+
+  // set invalid flag to false
+  isValid = false
+
+  // set error object on defintion token
+  util.<span class="apidocCodeKeywordSpan">throwError</span>(def, {
+    type: RULE.type
+  , message: RULE.message
+  , extract: extract
+  , line: line
+  })
+
+})
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.recess.zero_units" id="apidoc.module.recess.zero_units">module recess.zero_units</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.recess.zero_units.off" id="apidoc.element.recess.zero_units.off">
+        function <span class="apidocSignatureSpan">recess.zero_units.</span>off
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">off = function () {
+  less.tree.Value.prototype.toCSS = toCSS
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.recess.zero_units.on" id="apidoc.element.recess.zero_units.on">
+        function <span class="apidocSignatureSpan">recess.zero_units.</span>on
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">on = function () {
+  toCSS = less.tree.Value.prototype.toCSS
+  less.tree.Value.prototype.toCSS = compile
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
